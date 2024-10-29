@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Daily Tasks</h1>
+        <!-- Display the user balance -->
+        <div id="balance-display">
+            Balance: <span id="user-balance">0</span>
+        </div>
+    </header>
+
+    <section class="tasks-section">
+        <div class="task-item">
+            <h3>YouTube Subscribe</h3>
+            <button id="youtube-task-btn">Start Task</button>
+            <div id="youtube-timer" class="task-timer">Time Left: <span id="youtube-time-left">15</span> seconds</div>
+            <button id="youtube-claim-btn" class="claim-btn" disabled>Claim Reward</button>
+        </div>
+        <div class="task-item">
+            <h3>TikTok Follow</h3>
+            <button id="tiktok-task-btn">Start Task</button>
+            <div id="tiktok-timer" class="task-timer">Time Left: <span id="tiktok-time-left">15</span> seconds</div>
+            <button id="tiktok-claim-btn" class="claim-btn" disabled>Claim Reward</button>
+        </div>
+    </section>
+
+    <button id="back-to-main">Back to Main</button>
+
+    <script src="tasks.js"></script>
+</body>
+</html>

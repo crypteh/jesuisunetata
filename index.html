@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farming Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Welcome Page with Progress Bar -->
+    <div id="welcome-page">
+        <h1 class="title">Farming Game</h1>
+        <img src="assets/loading.gif" alt="Welcome GIF" class="welcome-img">
+        <div id="progress-container" class="progress-bar-container">
+            <div id="progress-bar" class="progress-bar"></div>
+        </div>
+    </div>
+
+    <!-- Main Game (Initially Hidden) -->
+    <div id="main-game" class="main-game-container" style="display: none;">
+        <!-- Sticky Header -->
+        <header class="header">
+            <h1 class="title">Wolf game</h1>
+            <div class="wallet-info">
+                <span id="wallet-address" class="wallet-text">Not connected</span>
+                <button id="connect-wallet" class="wallet-btn">Connect Wallet</button>
+            </div>
+        </header>
+
+        
+<!-- balance info-->
+<h2 class="balance-label">Balance: <span id="balance">0</span></h2>
+
+        <!-- Game Area -->
+        <section class="game-area">
+            <img id="farm-plot" src="assets/farm-plot.png" alt="Farm Plot" class="farm-image">
+            <div id="click-effect" class="click-effect"></div>
+        </section>
+
+        <!-- Balance and Income per Click -->
+        <section class="balance-container">
+            <h3 class="income-label">Income per Click: <span id="income-per-click">1</span></h3>
+        </section>
+
+        <!-- Boost Section -->
+        <section class="boost-section">
+            <button id="boost-button" class="boost-btn">Activate 5x Boost</button>
+            <p id="boost-timer" style="display: none;" class="boost-timer">
+                Boost active: <span id="boost-countdown">30</span> seconds left
+            </p>
+        </section>
+
+        <!-- Footer Navigation -->
+        <footer class="footer-nav">
+            <a href="leaderboard.html" class="footer-nav-item">
+                <img src="assets/leaderbord.png" alt="Leaderboard" class="nav-icon">
+                <span>Leaderboard</span>
+            </a>
+            <a href="tasks.html" class="footer-nav-item">
+                <img src="assets/task.png" alt="Tasks" class="nav-icon">
+                <span>Daily Tasks</span>
+            </a>
+            <a href="referrals.html" class="footer-nav-item">
+                <img src="assets/refer.png" alt="Referral" class="nav-icon">
+                <span>Refer</span>
+            </a>
+        </footer>
+    </div>
+
+    <script src="boost.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
